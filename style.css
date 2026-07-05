@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#conteudo{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.header a:hover{
+    color: rgb(24, 67, 39);
+}
+
+.header ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.header ul li{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    background-color: rgb(184, 220, 194);
+    width: 90%;
+    height: 95%;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    align-self: start;
+    z-index: 10;
+}
+
+
+.logo-card{
+    background: rgb(235, 255, 246);
+    border-radius: 50px;
+    
+    padding: 12px 30px 12px 12px;
+    margin: 0 auto 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    max-width: 90%;
+}
+
+#pomme{
+    height: 70px;
+    width: 70px;
+      font-family: "Herr Von Muellerhoff", cursive;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+#Logo{
+font-family: "Herr Von Muellerhoff", cursive;
+    font-size: 50px;
+    color: #111;
+    text-decoration: underline;
+      text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
+    white-space: nowrap;
+}
+
+.header .ativo{
+    color: rgb(44, 74, 44);
+    text-decoration: none;
+}
+
+
+.busca-item{
+    position: relative;
+    width: 80%;
+}
+
+#InputCabecario{
+    border-radius: 15px;
+    height: 36px;
+    width: 100%;
+    padding: 0 40px 0 12px;
+    border: none;
+        border-radius: 50px;
+
+}
+
+#lupa{
+    height: 17px;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+
+.fundo{
+    display: block;
+    width: 80%;
+    padding: 16px 0;
+    background: #d4f0db;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #111;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 20px;
+    box-shadow:
+        0 3px 6px rgba(0,0,0,0.2),
+        inset 0 1px 1px rgba(133, 252, 189, 0.6);
+    transition: transform 0.15s ease;
+}
+
+.fundo:hover{
+    transform: scale(1.03);
+    color: rgb(0,0,0);
+}
+
+
+#maisC{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 5px;
+}
+
+#C{
+
+    grid-column: 1 / -1;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.produto{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.quadrado{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    
+}
+
+.img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+
+#rodape{
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(35, 52, 40);
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+#letraR{
+    color: white;
+    font-size: 3vh;
+    text-align: end;
+}

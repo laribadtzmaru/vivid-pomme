@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Playfair Display', serif;
+    color: #222;
+}
+
+.pagina{
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "topo   topo"
+        "menu   principal"
+        "rodape rodape";
+    min-height: 100vh;
+}
+
+.topo{
+    grid-area: topo;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 10px 25px;
+    border-bottom: 1px solid #ddd;
+}
+
+.NexStage{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid #333;
+    border-radius: 40px;
+    padding: 6px 20px 6px 8px;
+    width: fit-content;
+    
+}
+
+#pomme{
+    height: 35px;
+    width: 35px;
+    object-fit: contain;
+}
+
+#Logo{
+    font-family: 'Alex Brush', cursive;
+    font-size: 22px;
+}
+
+.icones-topo{
+    grid-column: 3;
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.menu-lateral{
+    grid-area: menu;
+    background-color: rgb(104, 132, 109);
+    display: grid;
+    align-content: start;
+    justify-items: center;
+    gap: 15px;
+    padding: 30px 15px;
+    position: sticky;
+}
+
+.lista-menu{
+    display: grid;
+    gap: 15px;
+    width: 100%;
+}
+
+.fundo{
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    background: linear-gradient(180deg, #b7dfbd, #bfdbb5);
+    border-radius: 30px;
+    text-decoration: none;
+    color: #111;
+    font-weight: 700;
+    font-size: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: transform 0.15s ease;
+}
+
+.fundo:hover{
+    transform: scale(1.03);
+}
+
+.busca-item{
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+}
+
+#InputCabecario{
+    width: 100%;
+    height: 34px;
+    border-radius: 20px;
+    border: none;
+    padding: 0 40px 0 15px;
+}
+
+#lupa{
+    height: 16px;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+
+.contato-principal {
+    grid-area: principal;
+    display: grid;
+    justify-content: center;
+    align-content: start;
+    padding: 40px;
+}
+
+.form-contato {
+    background-color: rgba(98, 151, 107, 0.668);
+    padding: 25px;
+    width: 450px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+}
+
+.form-contato label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.form-contato input,
+.form-contato textarea {
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.rodape {
+    grid-area: rodape;
+    background-color: #20392a;
+    color: white;
+    display: grid;
+    gap: 5px;
+    padding: 20px;
+    font-size: 14px;
+}
